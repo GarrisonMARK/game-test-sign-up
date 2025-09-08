@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>testing</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Rubik+Bubbles&family=Satisfy&display=swap"
       rel="stylesheet"
@@ -55,6 +57,7 @@
                 placeholder="your email"
                 required
               />
+               <input type="text" name="sub" placeholder="subject" required />
               <textarea
                 class="textarea block--black"
                 name="message"
@@ -80,6 +83,7 @@
       </div>
     </footer>
   </body>
-
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
   <script src="src/js/main.js"></script>
 </html>

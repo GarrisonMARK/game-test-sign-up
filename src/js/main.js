@@ -13,8 +13,8 @@
 
 function sendEmil(){
   Email.send({
-  SecureToken: "41ffbe38-9b39-4ff5-b370-29a835495402",
-  To : 'garrisonweb2024@gmail.com',
+  SecureToken: "ccdb73c9-9ac4-43de-966f-f10fa089b6a3",
+  To : 'robotsamanthagarrisonweb@gmail.com',
   From : document.getElementById("#email").value,
   Subject : "This is the subject",
   Body : "name:" + document.getElementById("name").value + 
