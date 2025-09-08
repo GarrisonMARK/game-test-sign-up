@@ -234,3 +234,56 @@ input[type="email"] {
     color: gold;
 
   }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .grid {
+    gap: 1.5rem;
+  }
+
+  .block {
+    padding: 4rem 1rem;
+  }
+
+  .quote-container {
+    padding: 1.5rem;
+  }
+
+  .social-links {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    font-size: 1.8rem;
+  }
+
+  .btn-btn {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  .textarea {
+    padding: 1.5rem;
+  }
+}
