@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="block__heading ">
+  <body>
     <div class="container grid grid--1x2">
       <div class="logo-container">
 
@@ -39,32 +39,29 @@
             <p class="quote ">
               randomchaosmechanicsstudios.
             </p>
-            <p class="dotted logo-blue" > We flip games upside down </p>
+            <p class="dotted logo-blue" > "We flip games upside down" </p>
       </div>
       <div class="dash logo-green ">
         <div class="">
           <div class="container block--sec logo-blue btn">
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input
-                type="hidden"
-                name="access_key"
-                value="434c0283-731d-40a2-9fce-3f4e4a12babb"
-              />
-              <input type="text" name="name" placeholder="your name or username" required />
+            <form>
+              <input type="text" id="name" name="name" placeholder="your name or username" required />
               <input
                 type="email"
+                id="email"
                 name="email"
                 placeholder="your email"
                 required
               />
-               <input type="text" name="sub" placeholder="subject" required />
+               <input type="text" id="sub" name="sub" placeholder="subject" required />
               <textarea
                 class="textarea block--black"
                 name="message"
+                id="message"
                 required
                 placeholder="enter your email here"
               ></textarea>
-              <button type="submit" class="btn-btn">Submit</button>
+              <button type="submit" onclick="sendEmil()" class="btn-btn">Submit</button>
             </form>
           </div>
 
@@ -72,18 +69,31 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer class=" footer">
       <div class="container">
         <ul class="social-links">
           <li><a href="https://www.reddit.com/u/green___marker/s/TiSgdljkhY">Reddit</a></li>
           <li><a href="https://www.instagram.com/green___maker?igsh=cjN6ZXNteDlqNWJ5">Instagram</a></li>
           <li><a href="https://pin.it/37vyZ9dBE">Pinterest</a></li>
         </ul>
-        <p class="contact-info">contact us: randomchaosmechanicsstudios@gmail.com</p>
+          <p class="contact-info">
+          Contact Us:
+          <a class="color-gold" href="mailto:randomchaosmechanicsstudios@gmail.com"
+            >randomchaosmechanicsstudios@gmail.com</a
+          >
+        </p>
       </div>
     </footer>
   </body>
-<script src="https://smtpjs.com/v3/smtp.js">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "MHLqfBjxj3ZdjEK-W",
+      });
+   })();
 </script>
   <script src="src/js/main.js"></script>
 </html>

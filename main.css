@@ -5,7 +5,8 @@
   --color-neon-red: #ff0000;
   --color-heading: #ffffff;
   --color-body: #cccccc;
-  --color-border: #ff00ff;
+  --color-border: #00ff00;
+  --color-orange: #ffa500;
 }
 
 html {
@@ -21,7 +22,8 @@ html {
 img {
   width: 100%;
   border-radius: 8px;
-  border: 2px solid var(--color-accent);
+  border: 4px solid var(--color-accent);
+
   box-shadow: 0 0 10px var(--color-accent);
 }
 
@@ -92,15 +94,19 @@ a:hover {
 
 /* Logo container */
 .logo-container {
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: stretch;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /* Contact info */
 .contact-info {
   margin-top: 2rem;
-  font-size: 1.6rem;
-  color: var(--color-body);
+  font-size: 1rem;
+  color: ghostwhite;
 }
 
 
@@ -127,9 +133,7 @@ a:hover {
   padding: 6rem 2rem;
 }
 
-.block__heading {
-  background: transparent;
-}
+
 
 .dotted.logo-blue {
   padding: 2rem;
@@ -201,13 +205,16 @@ input[type="email"] {
 
 .footer {
   text-align: center;
-  padding: 4rem 0;
-  border-top: 1px solid var(--color-accent);
-  margin-top: 4rem;
-  box-shadow: 0 -5px 15px -5px var(--color-accent);
+  /* padding: 4rem; */
+  border-top: 2px solid var(--color-orange);
+  border-left: 2px solid var(--color-orange);
+  border-right: 2px solid var(--color-orange);
+  margin-top: 5rem;
+  box-shadow: -5px -5px 20px -5px var(--color-orange);
 }
 
 .social-links {
+
   list-style: none;
   padding: 0;
   margin: 0;
@@ -217,9 +224,12 @@ input[type="email"] {
 }
 
 .social-links a {
+  margin-top: 2rem;
+  padding-top: 1rem;
   font-size: 2rem;
   color: var(--color-sec-accent);
 }
+
 
 .social-links a:hover {
   color: var(--color-accent);
@@ -231,6 +241,65 @@ input[type="email"] {
 }
 
 .color-gold {
-    color: gold;
+    color: #fdbd01;
 
   }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .grid {
+    gap: 1.5rem;
+  }
+
+  .block {
+    padding: 4rem 1rem;
+  }
+
+  .quote-container {
+    padding: 1.5rem;
+  }
+
+  .social-links {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    font-size: 1.8rem;
+  }
+
+  .btn-btn {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  .textarea {
+    padding: 1.5rem;
+  }
+.contact-info {
+  margin-top: 2rem;
+  font-size: 10px;
+  color: var(--color-body);
+}
+
+}
