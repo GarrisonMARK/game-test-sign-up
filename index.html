@@ -44,7 +44,7 @@
       <div class="dash logo-green ">
         <div class="">
           <div class="container block--sec logo-blue btn">
-            <form>
+            <form id="contact-form-my">
               <input type="text" id="name" name="name" placeholder="your name or username" required />
               <input
                 type="email"
@@ -61,7 +61,7 @@
                 required
                 placeholder="enter your email here"
               ></textarea>
-              <button type="submit" onclick="sendEmil()" class="btn-btn">Submit</button>
+              <button type="submit" id="send-button" class="btn-btn">Submit</button>
             </form>
           </div>
 
@@ -84,16 +84,10 @@
         </p>
       </div>
     </footer>
-  </body>
+
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "MHLqfBjxj3ZdjEK-W",
-      });
-   })();
-</script>
-  <script src="src/js/main.js"></script>
+  <script src="main.js"></script>
+</body>
 </html>
