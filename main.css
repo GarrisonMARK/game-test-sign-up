@@ -205,7 +205,6 @@ input[type="email"] {
 
 .footer {
   text-align: center;
-  /* padding: 4rem; */
   border-top: 2px solid var(--color-orange);
   border-left: 2px solid var(--color-orange);
   border-right: 2px solid var(--color-orange);
